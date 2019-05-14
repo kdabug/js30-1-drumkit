@@ -12,6 +12,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  font-weight: bolder;
 }
 
 .keys {
@@ -31,25 +32,26 @@ html {
   transition: all 0.07s ease;
   width: 10rem;
   text-align: center;
-  color: white;
-  background: rgba(0, 0, 0, 0.4);
+  color: blacks;
+  background: rgba(241, 236, 236, 0.562);
   text-shadow: 0 0 0.5rem black;
 }
 
 .playing {
   transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  border-color: #ff0000;
+  box-shadow: 0 0 1rem #ff0000;
 }
 
 kbd {
   display: block;
   font-size: 4rem;
+  font-family: "New Rocker", cursive;
 }
 
 .sound {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  color: #ffc600;
+  color: #ff0000;
 }
