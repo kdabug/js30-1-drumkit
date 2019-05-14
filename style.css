@@ -36,6 +36,11 @@ html {
   text-shadow: 0 0 0.5rem black;
 }
 
+.example {
+  position: absolute;
+  left: 5%;
+}
+
 .playing {
   transform: scale(1.1);
   border-color: #ff0000;
