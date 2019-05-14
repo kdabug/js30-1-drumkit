@@ -62,7 +62,21 @@
     <script>
       window.addEventListener("keydown", function(e) {
         const audio = document.querySelector(`audio[data-key="${e.keycode}"]`);
+        const key = document.querySelector(`.key[data-key"${e.keycode}"]`);
+        if (!audio) return;
+        audio.currentTime = 0;
+        audio.play();
+        key.classList.add("playing");
       });
+      function removeTransition(e) {
+        if (e.propertyName !== "transform") return;
+      }
+      const keys = document.querySelectorAll(".key");
+      //can only loop over and add event listeners to each element of the array.
+      //can not do keys.addEventListener in bulk....does not work
+      keys.forEach(key =>
+        key.addEventListener("transitionend", removeTransition)
+      );
     </script>
   </body>
 </html>
